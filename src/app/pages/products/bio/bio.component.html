@@ -1,0 +1,23 @@
+<main>
+    <div class="container"><br>
+      <h3 class="title border-down">Nos Produits Bio</h3><br>
+      <!--row: ligne-->
+      <div class="row">
+      <!--col: colonne-->
+        <div class="col-3" *ngFor="let Bio of ProduiBioFilter ;" >
+          <div class="card " [value]="Bio" >
+            <img class="card-img-top" src="assets/ProduitBioImages/{{Bio.Photo}}" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">{{Bio.Designation}}</p>
+              <p class="card-text">{{Bio.Descriptif}}</p>
+              <p class="card-text">{{Bio.Prix}}€</p>
+              <div style="margin-left:10px">
+                <button class="btn btn-success" (click)="selectedProduitBioValue(Bio)">Ajouter dans le panier</button>
+                
+            </div>
+            </div>
+          </div> <br>
+        </div> 
+      </div>
+    </div><br><br><br>
+  </main>

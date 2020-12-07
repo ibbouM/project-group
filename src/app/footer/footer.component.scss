@@ -1,0 +1,19 @@
+main{
+.footer{
+    height: 220px;
+    bottom: 0;
+    background-color: rgb(245, 240, 240);
+    text-align: center;
+    .word{
+        font-size: 25px;
+    }
+    .border-down{
+        border-bottom: green solid 1px;
+    }
+    .icon{
+        font-size: 30px;
+        margin-left: 10px;
+        color: green;
+    }
+}
+}

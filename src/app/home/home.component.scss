@@ -1,0 +1,48 @@
+main{
+    background-color:rgb(225, 255, 197);
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    .title{
+        text-align: center;
+        font-size: 25px;
+        font-style: italic;
+    }
+    .carousel{
+        margin: auto;
+        height: 400px;
+        width: 800px;
+        background-color:white;
+  
+        .description{
+            background-color: rgb(231, 238, 225);
+            margin: auto;
+            text-align: center;
+            height: 70px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           .border-down{
+               border-bottom: solid green 1px;
+           }
+        }
+        .carousel-control-color{
+            width: 40px;
+            margin-top: 90px;
+            background-color: rgb(160, 207, 116);
+        }
+    }
+    .card{
+        .zoom {
+            transition:0.5s;
+        }
+        .zoom:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        .card-body{
+        background-color:  rgb(198, 245, 159);
+        text-align: center;
+    }
+    }
+    
+}

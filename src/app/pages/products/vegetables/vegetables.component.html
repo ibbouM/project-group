@@ -1,0 +1,22 @@
+<main>
+    <div class="container"><br>
+      <h3 class="title border-down">Nos Légumes</h3><br>
+      <!--row: ligne-->
+      <div class="row">
+      <!--col: colonne-->
+        <div class="col-3" *ngFor="let legume of legumeFilter;" >
+            <div class="card " [value]="legume"> 
+                <img class="card-img-top" src="assets/LegumesImages/{{legume.Photo}}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">{{legume.Designation}}</p>
+                  <p class="card-text">{{legume.Prix}}€/kg </p>
+                  <p class="card-text">{{legume.Descriptif}}</p>
+                  <div class="btn-validate">
+                    <button class="btn btn-success btn-validate" (click)="selectedLegumeValue(legume)">Ajouter dans le panier</button>
+                </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div><br><br><br>
+  </main>

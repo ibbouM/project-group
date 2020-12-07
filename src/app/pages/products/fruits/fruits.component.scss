@@ -1,0 +1,15 @@
+main{
+    background-color:rgb(225, 255, 197);
+    .title{
+        text-align: center;
+    }
+    .border-down{
+        border-bottom: green 1px solid;
+    }
+    .card{
+        width: 250px;
+        .card-body{
+            text-align: center;
+        }
+    }
+}

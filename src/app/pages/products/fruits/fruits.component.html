@@ -1,0 +1,22 @@
+<main>
+  <div class="container"><br>
+    <h3 class="title border-down">Nos fruits</h3><br>
+    <!--row: ligne-->
+    <div class="row">
+    <!--col: colonne-->
+      <div class="col-3" *ngFor="let fruit of fruitsFilter ;" >
+        <div class="card " [value]="fruit">
+          <img class="card-img-top" src="assets/FruitsImages/{{fruit.Photo}}" alt="Card image cap">
+          <div class="card-body">
+            <p  class="card-text">{{fruit.Designation}}</p>
+            <p  class="card-text">{{fruit.Descriptif}}</p>
+            <p class="card-text">{{fruit.Prix}}€/kg</p>
+            <div >
+              <button class="btn btn-success " (click)="selectedFruitValue(fruit)" >Ajouter dans le panier</button>
+          </div>
+          </div>
+        </div> <br>
+      </div> 
+    </div>
+  </div><br><br><br>
+</main>

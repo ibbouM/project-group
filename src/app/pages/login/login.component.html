@@ -1,0 +1,20 @@
+<main>
+    <div class="container"><br><br>
+        <h3 class="title border-down">Connectez-vous</h3><br>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" placeholder="Adresse Email" formControlName="email">
+            </div><br>
+            <div class="form-group">
+                <label for="pwd">Mot de passe</label>
+                <input type="password" class="form-control" placeholder="Mot de passe" formControlName="pwd">
+            </div>
+            <h6>Pas encore inscrit? <a routerLink="/register">inscrivez-vous!</a></h6><br>
+            <div class="btn-validate">
+                <button class="btn btn-success btn-validate">Se connecter</button>
+            </div>
+        </form><br><br><br><br>
+
+    </div>
+</main>

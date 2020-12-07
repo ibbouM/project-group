@@ -1,0 +1,28 @@
+<!--Conteneur du code-->
+<main>
+  
+
+
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <a class="logo" routerLink="/"><p class="word1-title">Fruits</p> <img src="assets/logo.jpg" style="height: 80px;"><p class="word2-title">Market</p></a>
+      <div *ngIf="user" class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <p style="margin-top: 8px;" *ngIf="!userConnection">Bienvenue {{nomUser}}</p>
+              <li class="nav-item dropdown" >
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Catégories
+                  </a>
+                  <div class="dropdown-menu categorys-color" aria-labelledby="navbarDropdown" >
+                    <a class="dropdown-item" routerLink="fruits">Fruits</a>
+                    <a class="dropdown-item" routerLink="vegetables">Légumes</a>
+                    <a class="dropdown-item" routerLink="bio">Fruits & Légumes Bio</a>
+                  </div>
+                </li>
+              <a *ngIf="userConnection" class="nav-item nav-link" routerLink="login"><i class="fi fi-male"></i> Se connecter <span class="sr-only"></span></a>
+              <a *ngIf="!userConnection" class="nav-item nav-link" (click)="deconnecter()"><i class="fi fi-male"></i> Se Deconnecter <span class="sr-only"></span></a>
+              <a disabled class="nav-item nav-link" routerLink="basket"><i class="fi fi-shopping-basket"></i> Mon panier  <span class="sr-only"></span></a>
+          </div>
+      </div>
+  </nav>
+</main>

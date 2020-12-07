@@ -1,0 +1,96 @@
+<main class="container-fluid">
+    <div  class="container"><br><br>
+        
+        <h4 *ngIf="user" class="title">Le Meilleur du frais livré <i class="fi fi-truck"></i> à votre domicile !</h4><br>
+       <!-- user = true => déclaré dans navbar.component.ts-->
+        <div *ngIf="user" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img class="img" src="/assets/carousel3.jpg" alt="First slide">
+                    <div class="description">
+                        <p>Fruits Market vous propose des produits <span class="border-down">naturels</span>, <span
+                                class="border-down">sains</span> et <span class="border-down">extra-frais</span>.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img" src="/assets/carousel2.jpg" alt="Second slide">
+                    <div class="description">
+  <p>Nous travaillons main dans la main avec les <span class="border-down">producteurs</span>
+                            locaux pour ne vous proposer que le meilleur.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img" src="/assets/carousel1.jpg" alt="Third slide">
+                    <div class="description">
+                        <p>Nos produits sont soigneusement <span class="border-down">sélectionnés</span> pour vous.</p>
+
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev carousel-control-color" href="#carouselExampleControls" role="button"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+ <a class="carousel-control-next carousel-control-color" href="#carouselExampleControls" role="button"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only ">Next</span>
+            </a>
+            <br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div *ngIf="user">
+            <br><br><br><br><br><br><br><br>
+        </div>
+
+<div *ngIf="user">
+            <br><br><br><br><br><br><br><br>
+        </div>
+
+        <div *ngIf ="!user">
+            <h1 style="text-align: center;">Bienvenue administrateur {{name}}</h1>
+                </div><br><br>
+        <div class="row">
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="zoom">
+                        <a routerLink="fruits">
+                            <img class="card-img-top" src="/assets/fruits.jpeg">
+                            <div class="card-body">
+                                <h5 class="card-title">Fruits</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+ </div>
+            <div class="col-4">
+                <div class=" card" style="width: 18rem;">
+                    <div class="zoom">
+                        <a routerLink="vegetables">
+                            <img class="card-img-top" src="/assets/legumes.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">Légumes</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="zoom">
+                        <a routerLink="bio">
+                            <img class="card-img-top" src="/assets/bio.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">Fruits & Légumes Bio</h5>
+                            </div>
+  </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+<br><br><br><br><br>
+</main>

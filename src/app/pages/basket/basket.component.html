@@ -1,0 +1,28 @@
+
+<main>
+    <div class="container"><br>
+      <h3 class="title border-down">Mon panier</h3><br>
+      <!--row: ligne-->
+      <div class="row">
+      <!--col: colonne-->
+        <div class="col-3" *ngFor="let paniers of Panier;" >
+          <div class="card ">
+           
+            <div class="card-body">
+              <p class="card-text">{{paniers.Designation}}</p>
+              <p class="card-text">{{paniers.Prix}}€/kg</p>
+              <p class="card-text">Qte: {{nbrPanier}}</p>
+              <div style="margin-left: 25px;" >
+                <button class="btn btn-danger">Retirer</button>
+                
+            </div>
+            </div>
+
+          </div>
+          
+          <br>
+        <button class="btn btn-danger" routerLink="/paiement">Commander</button>
+        </div>
+      </div>
+    </div><br><br><br>
+  </main>
